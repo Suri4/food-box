@@ -3,7 +3,7 @@ import React from 'react'
 const Card = ({ details }) => {
 
     const ingredients = details.ingredients.split(',').map(item => <li>{item}</li>)
-    const instructions = details.ingredients.split(',').map(item => <li>{item}</li>)
+    const instructions = details.instructions.split('\n').map(item => <li>{item}</li>)
 
     const requireImage = path => {
         try{
